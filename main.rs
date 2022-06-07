@@ -1,7 +1,6 @@
-use futures::executor;
-
-fn main() {
-    executor::block_on(async_add_logger(2, 8));
+#[tokio::main]
+async fn main() {
+  async_add_logger(2, 8).await;
 }
 
 /** 非同期足し算 */
