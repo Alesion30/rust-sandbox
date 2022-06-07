@@ -1,4 +1,4 @@
-#[tokio::main]
+#[async_std::main]
 async fn main() {
   async_add_logger(2, 8).await;
 }
